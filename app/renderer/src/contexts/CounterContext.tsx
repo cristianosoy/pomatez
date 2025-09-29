@@ -3,6 +3,9 @@ import useStayAwake from "use-stay-awake";
 import { setPlay, setRound, setTimerType } from "store";
 import { useNotification } from "hooks";
 import { isEqualToOne, padNum } from "utils";
+import { useAppDispatch, useAppSelector } from "hooks/storeHooks";
+import { TimerStatus } from "store/timer/types";
+import { setMusicEnabled } from "store";
 
 import notificationIcon from "assets/logos/notification-dark.png";
 
@@ -418,8 +421,16 @@ const CounterProvider: React.FC = ({ children }) => {
     if (settings.enableFullscreenBreak) {
       if (timer.timerType !== TimerStatus.STAY_FOCUS) {
         setShouldFullscreen(true);
+        // Pause music during breaks if fullscreen is enabled
+        if (settings.musicEnabled) {
+          dispatch(setMusicEnabled(false));
+        }
       } else {
         setShouldFullscreen(false);
+        // Resume music when returning to focus time
+        if (settings.musicEnabled !== undefined) {
+          dispatch(setMusicEnabled(true));
+        }
       }
     }
   }, [settings.enableFullscreenBreak, timer.timerType]);

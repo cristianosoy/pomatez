@@ -17,6 +17,9 @@ export type SettingTypes = {
   autoStartWorkTime: boolean;
   notificationType: NotificationTypes;
   openAtLogin: boolean;
+  musicEnabled: boolean;
+  musicVolume: number;
+  currentMusicUrl: string;
 };
 
 export const enum NotificationTypes {

@@ -25,6 +25,7 @@ export { default as Collapse } from "./Collapse";
 export { default as Alert } from "./Alert";
 export { default as Updater } from "./Updater";
 export { default as NavNotify } from "./NavNotify";
+export { default as MusicPlayer } from "./MusicPlayer";
 
 export * from "./Popper";
 export * from "./Preloader";

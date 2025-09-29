@@ -18,4 +18,7 @@ export const defaultSettings: Readonly<SettingTypes> = Object.freeze({
   autoStartWorkTime: false,
   useNativeTitlebar: detectOS() === "Windows" ? false : true,
   openAtLogin: false,
+  musicEnabled: false,
+  musicVolume: 30,
+  currentMusicUrl: "",
 });

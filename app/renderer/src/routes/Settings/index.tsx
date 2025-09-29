@@ -8,6 +8,7 @@ import HelpSection from "./HelpSection";
 import ShortcutSection from "./ShortcutSection";
 import StickySection from "./StickySection";
 import SettingHeader from "./SettingHeader";
+import MusicSection from "./MusicSection";
 import { useAppSelector } from "hooks/storeHooks";
 import { Updater } from "../../components";
 
@@ -35,6 +36,7 @@ export default function Settings() {
         />
       )}
       <FeatureSection />
+      <MusicSection />
       <ShortcutSection />
       <HelpSection />
       <StickySection />

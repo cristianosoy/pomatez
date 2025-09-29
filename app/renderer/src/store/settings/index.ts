@@ -138,6 +138,18 @@ const settingsSlice = createSlice({
       state.openAtLogin = action.payload;
     },
 
+    setMusicEnabled(state, action: SettingsPayload<"musicEnabled">) {
+      state.musicEnabled = action.payload;
+    },
+
+    setMusicVolume(state, action: SettingsPayload<"musicVolume">) {
+      state.musicVolume = action.payload;
+    },
+
+    setCurrentMusicUrl(state, action: SettingsPayload<"currentMusicUrl">) {
+      state.currentMusicUrl = action.payload;
+    },
+
     restoreDefaultSettings() {
       return defaultSettings;
     },
@@ -162,6 +174,9 @@ export const {
   setOpenAtLogin,
   setUseNativeTitlebar,
   toggleNotificationSound,
+  setMusicEnabled,
+  setMusicVolume,
+  setCurrentMusicUrl,
 } = settingsSlice.actions;
 
 export default settingsSlice.reducer;

@@ -17,3 +17,5 @@ export * from "./popper";
 export * from "./loaders";
 export * from "./collapse";
 export * from "./alert";
+export * from "./musicPlayer";
+export * from "./musicWidget";

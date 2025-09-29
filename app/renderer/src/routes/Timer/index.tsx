@@ -5,6 +5,7 @@ import { StyledTimer } from "styles";
 import Control from "./Control";
 import Counter from "./Counter";
 import PriorityCard from "./PriorityCard";
+import MusicWidget from "./MusicWidget";
 
 export default function Timer() {
   const compactMode = useAppSelector(
@@ -19,6 +20,7 @@ export default function Timer() {
   return (
     <StyledTimer className={compactMode ? "compact" : ""}>
       <Counter />
+      {!compactMode && <MusicWidget />}
       {compactMode ? null : <PriorityCard />}
       <Control resetTimerAction={onResetCallback} />
     </StyledTimer>

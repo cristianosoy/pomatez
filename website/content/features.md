@@ -57,6 +57,9 @@ features:
 
   - heading: Compact mode
     description: Once enabled, the app will occupy less space on your screen and it will be useful if you're using a small-screen device.
+
+  - heading: Background music
+    description: Allows you to play YouTube live streams or videos as background music during focus sessions. Features volume control and automatically pauses during breaks when fullscreen mode is enabled to maintain focus.
 ---
 
 All features of Pomodoro Technique are supported plus some additional features that you might find useful.

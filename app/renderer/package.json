@@ -8,7 +8,7 @@
     "email": "roldanjrmontilla@gmail.com",
     "url": "https://github.com/roldanjr"
   },
-  "description": "Attractive pomodoro timer for Windows, Mac, and Linux.",
+  "description": "Attractive pomodoro timer with background music support for Windows, Mac, and Linux.",
   "homepage": "./",
   "scripts": {
     "clean": "rimraf build/",

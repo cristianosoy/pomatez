@@ -4,7 +4,7 @@ name = "pomatez"
 # https://github.com/googleapis/release-please/issues/1724
 # util/cargo-version-updater.js will run to keep this value up to date before rust builds.
 version = "1.7.2"
-description = "Attractive pomodoro timer for Windows, Mac, and Linux."
+description = "Attractive pomodoro timer with background music support for Windows, Mac, and Linux."
 authors = ["Roldan Montilla Jr"]
 license = "MIT"
 repository = "https://github.com/zidoro/pomatez"

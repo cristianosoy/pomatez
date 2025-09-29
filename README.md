@@ -82,6 +82,8 @@
 
 - **Compact Mode** - once enabled, the app will occupy less space on your screen and it will be useful if you're using a small-screen device.
 
+- **Background Music** - allows you to play YouTube live streams or videos as background music during focus sessions to enhance concentration. Supports volume control and automatically pauses during breaks when fullscreen mode is enabled.
+
 ## :zap: Quick Setup
 
 ### :page_with_curl: Prerequisites

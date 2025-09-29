@@ -10,7 +10,7 @@
     "url": "https://github.com/roldanjr"
   },
   "repository": "https://github.com/zidoro/pomatez",
-  "description": "Attractive pomodoro timer for Windows, Mac, and Linux.",
+  "description": "Attractive pomodoro timer with background music support for Windows, Mac, and Linux.",
   "scripts": {
     "prepare": "yarn build",
     "clean": "rimraf dist/ build/",

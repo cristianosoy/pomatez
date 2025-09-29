@@ -8,7 +8,8 @@
   },
   "package": {
     "productName": "Pomatez",
-    "version": "1.8.0"
+    "version": "1.8.0",
+    "description": "Attractive pomodoro timer with background music support for Windows, Mac, and Linux."
   },
   "tauri": {
     "bundle": {
